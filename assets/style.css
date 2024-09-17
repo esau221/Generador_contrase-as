@@ -1,0 +1,124 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f0f0 25%, transparent 25%) -50px 0,
+                linear-gradient(225deg, #f0f0f0 25%, transparent 25%) -50px 0,
+                linear-gradient(315deg, #f0f0f0 25%, transparent 25%),
+                linear-gradient(45deg, #f0f0f0 25%, transparent 25%);
+    background-size: 100px 100px;
+    background-color: #eaeaea;
+}
+
+/* Estilo del contenedor */
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+}
+
+/* Efecto hover en el contenedor */
+.container:hover{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Título del generador */
+h1 {
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+/* Estilo del input */
+.container__campo input{
+    margin-bottom: 40px;
+}
+
+.container__input{
+    width: 15%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container__input:focus{
+    border-color: #00aaff;
+}
+
+.container__campo .container__contrasena{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    font-size: 1em;
+    outline: none;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+/* Estilos de los botones */
+.button-container{
+    margin-bottom: 50px;
+}
+
+/* Botón Generar */
+.button-container .boton.generate{
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 25%;
+    margin-right: 5px;
+}
+
+/* Botón Limpiar */
+.button-container .boton.clean{
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 25%;
+    margin-left: 35px;
+}
+
+/* Efecto hover en los botones */
+.boton.generate:hover {
+    background-color: #218838;
+}
+
+.boton.clean:hover {
+    background-color: #c82333;
+}
+
+
+/* Estilo responsivo */
+@media (max-width:400px){
+    .container{
+        width: 90%;
+    }
+}
